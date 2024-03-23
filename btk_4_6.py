@@ -54,3 +54,5 @@ elif(indeks>30.0)and(indeks<34.9):
 else:
     print('tekrar deneyiniz')
     
+
+#test-repo
