@@ -5,7 +5,7 @@ print(toplam)
 #inputtan string değer gelir
 toplam1 = int(x)+int(y)
 print(toplam1)
-
+##test-repo
 
 a=5
 b=2.5
