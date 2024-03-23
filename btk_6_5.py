@@ -1,0 +1,1 @@
+##yeni dosyam hayırlı olsun.
