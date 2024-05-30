@@ -6,14 +6,12 @@ SerkanHesap = {
     'bakiye': 3000,
     'ekHesap': 2000
 }
-
 AcelyaHesap = {
     'ad': 'Açelya Şentürk',
     'hesapNo': '12343456789',
     'bakiye': 2000,
     'ekHesap': 1000
 }
-
 def paraCek(hesap, miktar):
     print(f"merhaba {hesap['ad']}")
 
@@ -32,6 +30,7 @@ def paraCek(hesap, miktar):
                 print(f"{hesap['hesapNo']} nolu hesabınızda {hesap['bakiye']} tl bulunmaktadır")
         else:
             print("üzgünüz bakiye yetersiz")
+
 
 miktar=int(input("çekmek istediğiniz para miktarı: "))
 paraCek(SerkanHesap, miktar)
