@@ -1,33 +1,37 @@
-x = 'global x'
-def function():
-    x= 'local x'
-    print(x)
-function()  #local x
+# ÖRNEK- BANKAMATİK
 
-print(x)  #global x
+SerkanHesap = {
+    'ad': 'Serkan Şentürk',
+    'hesapNo': '12345678',
+    'bakiye': 3000,
+    'ekHesap': 2000
+}
 
-name='serkan'
+AcelyaHesap = {
+    'ad': 'Açelya Şentürk',
+    'hesapNo': '12343456789',
+    'bakiye': 2000,
+    'ekHesap': 1000
+}
 
-def changeName(new_name):
-    name=new_name
-    print(name)
-changeName('acelya')  #acelya
+def paraCek(hesap, miktar):
+    print(f"merhaba {hesap['ad']}")
 
-name='global string'
 
-def greeting(name):
-    name='serkan'
-    def hello():
-        print('Hello '+name)
-    hello()
+    if hesap['bakiye']>= miktar:
+        print("paranızı alabilirsiniz.")
+    else:
+        toplam= hesap['bakiye'] + hesap['ekHesap']
 
-greeting('acelya') #hello serkan
+        if(toplam>=miktar):
+            ekhesapkullanımı=input('ek hesap kullanılsın mı (e/h)')
 
-x=50
-def test():
-    #global x dersek dışarıdaki x de 100 olur
-    print(f'x:{x}') #50
-    x=100
-    print(f'x in yeni değeri: {x}') #100
+            if ekhesapkullanımı=='e':
+                print('paranızı alabilirsiniz.')
+            else:
+                print(f"{hesap['hesapNo']} nolu hesabınızda {hesap['bakiye']} tl bulunmaktadır")
+        else:
+            print("üzgünüz bakiye yetersiz")
 
-test()
+miktar=int(input("çekmek istediğiniz para miktarı: "))
+paraCek(SerkanHesap, miktar)
