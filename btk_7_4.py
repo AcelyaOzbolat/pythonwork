@@ -1,8 +1,11 @@
-
-"""# 1- gönderilen kelimeyi belirtilen kez ekranda gösteren fonksiyonu yazınız
+"""
+# 1- gönderilen kelimeyi belirtilen kez ekranda gösteren fonksiyonu yazınız
 def yazdir(kelime, adet):
     print(kelime*adet)
-yazdir('merhaba ',10)
+
+ne=input('söylemek istediğiniz kelime: ')
+kaç= int(input('kaç adet söylensin:'))
+yazdir(ne\n, kaç)
 
 
 #kendine gönderilen sınırsız sayıdaki parametreyi bir listeye çeviren bir fonk yaz
@@ -20,6 +23,7 @@ sayi1=int(input("sayı: "))
 sayi2=int(input("sayı: "))
 
 def asalSayilariBul(sayi1,sayi2):
+
     for sayi in range(sayi1,sayi2+1):
         if sayi >1:
             for i in range(2,sayi):
@@ -27,6 +31,7 @@ def asalSayilariBul(sayi1,sayi2):
                     break
                 else:
                     print(sayi)
+
 
 asalSayilariBul(sayi1,sayi2)
 """
@@ -38,4 +43,6 @@ def tamBolenleriBul(sayi):
         if(sayi%i==0):
             tamBolenler.append(i)
     return tamBolenler
-print(tamBolenleriBul(30))
+
+sayi=int(input("ssayı:"))
+print(tamBolenleriBul(sayi))
