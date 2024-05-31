@@ -18,7 +18,7 @@ print(tuple.count('ayse'))
 
 print(tuple.index('iki'))
 names=('serkan','aci','cınar')+tuple 
-names.remove('aci')#hata verir
+#names.remove('aci')#hata verir
 print(list)
 print(tuple)
 print(names)
